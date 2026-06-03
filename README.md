@@ -143,3 +143,5 @@ If you encounter persistent posting failures, take note of these custom security
    - When the same "Something went wrong" message appears on commercial network blocks, it is typically due to the anti-VPN IP blocklist filter. Switch to high-quality residential proxies, standard home ISPs, or mobile connections to bypass.
 3. **WASM & Javascript Challenges**
    - The spoofer and python scripts work hard to handle standard integrity challenge equations. If a full Captcha block is triggered (such as Cloudflare Turnstile or board-specific graphic tests), you must solve them manually in your browser; automation under `poster.py` will not proceed through captchas.
+4. **Manual "Ban Evasion" Bans**
+   - Sometimes you may get banned for "ban evasion" even for completely benign posts. This is **not due to any script failure or fingerprint leak**. Instead, it occurs because janitors obsessively check the post history of active IP addresses, manually flagging and banning fresh/zero-post-history IPs that submit posts matching the typical stylistic traits or images of known ban-evader.
